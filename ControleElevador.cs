@@ -20,5 +20,28 @@ namespace Elevador
                 Console.WriteLine(estadoAtual.MovimentarElevador());
             }
         }
+        
+        public int obterAndares()
+        {
+            return andares;
+        }
+
+        public int validateEntrada()
+        {
+            newEntrada:
+            var entrada = Console.ReadLine();
+
+            if (entrada == "0")
+                Environment.Exit(0);
+
+            if (!int.TryParse(entrada, out int resultado))
+            {
+                Console.WriteLine("Configurar entrada do botao para valor somente numerico ou colocar um parse");
+                goto newEntrada;
+            }
+            
+            return resultado;
+        }
+
     }
 }
