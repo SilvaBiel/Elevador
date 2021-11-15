@@ -4,17 +4,17 @@ namespace Elevador
 {
     public class ElevadorDescendo : Estado
     {
-        private readonly int _andarDesejado;
+        private readonly int _andar;
 
         public ElevadorDescendo(int andarDesejado, Estado estado)
             : this(estado.AndarAtual, estado.Controle, estado.Elevador)
         {
-            _andarDesejado = andarDesejado;
+            _andar = andarDesejado;
         }
 
         private ElevadorDescendo(int andarAtual, bool[] controle, ControleElevador elevador)
         {
-            AndarAtual = andarAtual;
+            andar = andarAtual;
             Controle = controle;
             Elevador = elevador;
         }
@@ -23,14 +23,14 @@ namespace Elevador
         {
             var mensagem = string.Empty;
 
-            if (_andarDesejado < 1 || _andarDesejado > Elevador.ObterAndares())
+            if (_andar < 1 || _andar > Elevador.ObterAndares())
                 return "Andar inválido.";
 
             for (int i = AndarAtual; i >= 1; i--)
             {
                 if (Controle[i])
                 {
-                    mensagem = PararNoAndar(_andarDesejado);
+                    mensagem = PararNoAndar(_andar);
                     Elevador.EstadoAtual = new ElevadorParado(this);
                     break;
                 }
