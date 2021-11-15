@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicaElevador", "LogicaElevador.csproj", "{FDDCE58E-9849-4307-AB17-1A0B73A60428}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estado", "..\Estado\Estado.csproj", "{2B555558-2907-4A2C-A217-2A56BB2CEBB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDDCE58E-9849-4307-AB17-1A0B73A60428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDDCE58E-9849-4307-AB17-1A0B73A60428}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDDCE58E-9849-4307-AB17-1A0B73A60428}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDDCE58E-9849-4307-AB17-1A0B73A60428}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B555558-2907-4A2C-A217-2A56BB2CEBB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B555558-2907-4A2C-A217-2A56BB2CEBB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B555558-2907-4A2C-A217-2A56BB2CEBB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B555558-2907-4A2C-A217-2A56BB2CEBB6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {281B325C-B827-471D-AE3A-4F559059A298}
+	EndGlobalSection
+EndGlobal
